@@ -1,0 +1,26 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+artifacts/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Local env / secrets — never commit
+.env
+.env.*
+*.local.json
+!*.template.json
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Test / coverage output
+TestResults/
+coverage/
+*.trx
