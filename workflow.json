@@ -1,7 +1,7 @@
 {
   "name": "rentwell",
   "industry": "property management",
-  "stage": "architecture",
+  "stage": "development",
   "cloud": "azure",
   "connectors": ["email", "sms"],
   "capabilities": [],
