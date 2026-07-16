@@ -1,9 +1,9 @@
 {
   "name": "rentwell",
   "industry": "property management",
-  "stage": "system-definition",
-  "cloud": "none",
-  "connectors": [],
+  "stage": "architecture",
+  "cloud": "azure",
+  "connectors": ["email", "sms"],
   "capabilities": [],
   "github": {
     "repo": "abrahamFerga/rentwell",
