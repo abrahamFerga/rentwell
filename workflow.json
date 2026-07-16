@@ -5,7 +5,11 @@
   "cloud": "none",
   "connectors": [],
   "capabilities": [],
-  "github": null,
+  "github": {
+    "repo": "abrahamFerga/rentwell",
+    "project": 9,
+    "visibility": "public"
+  },
   "skills": {
     "self": {
       "marketplace": "my-skills",
