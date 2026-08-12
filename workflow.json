@@ -10,11 +10,23 @@
     "project": 9,
     "visibility": "public"
   },
+  "//autonomy": "level: 0 nothing · 1 docs+tests · 2 features on review · 3 unattended. Set by a HUMAN, never inferred — an agent deciding it has earned autonomy is the self-approving loop wearing a different hat. It is 0 here for a structural reason, not a judgement about this product: rentwell has no .github/ gate scripts, no CODEOWNERS and no branch protection, so there is nothing to enforce a higher number. `merge-gate.mjs` reads this and refuses to exceed it. Run `/plenipo:setup` to install that surface before raising it, and add `trustedAuthors` at the same time — the merger authorizes by author identity and an empty list means nothing merges.",
+  "autonomy": {
+    "level": 0,
+    "trustedAuthors": [],
+    "maxOpenPRs": 3,
+    "maxMergesPerTick": 2,
+    "readyFloor": 3,
+    "maxIssuesPerSweep": 8,
+    "maxNewCapabilities": 5
+  },
+
+  "//skills": "Migrated from the `my-skills` marketplace to `plenipo-agents` so this repo runs the same harness as the rest of the fleet. This block and .claude/settings.json must agree: a marketplace is keyed by the `name` field in its own .claude-plugin/marketplace.json, NOT by its owner/repo slug, and getting that wrong resolves zero plugins silently.",
   "skills": {
     "self": {
-      "marketplace": "my-skills",
-      "repo": "abrahamFerga/my-skills",
-      "plugins": ["workflow-core", "system-definition", "architecture", "development"]
+      "marketplace": "plenipo-agents",
+      "repo": "abrahamFerga/plenipo-agents",
+      "plugins": ["plenipo", "harness", "scout", "define", "shape", "deliver"]
     },
     "external": []
   }
